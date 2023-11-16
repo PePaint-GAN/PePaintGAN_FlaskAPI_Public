@@ -1,0 +1,1 @@
+Aqui tiene que estar los modelos de generacion de pinturas. No se estan guardando en Github porque pesan mucho.
