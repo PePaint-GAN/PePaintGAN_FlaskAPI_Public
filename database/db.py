@@ -8,8 +8,9 @@ def initialize_firestore_and_storage():
     if not initialized:
         # Creo una credencial de servicio para autenticarme en Firebase
         cred = credentials.Certificate("database/key.json")
+        project_name = 'paintgan-a23b4'
         initialize_app(cred, {
-            'storageBucket': 'paintgan-a23b4.appspot.com'  # Reemplaza con el nombre de tu proyecto
+            'storageBucket': f'{project_name}.appspot.com'  # Reemplaza con el nombre de tu proyecto
         })
 
         initialized = True

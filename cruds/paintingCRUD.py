@@ -95,8 +95,9 @@ def generateAndSaveImages(model_name):
                  blob = bucket.blob(f'{filename}')
                  blob.upload_from_file(image_file, content_type='image/jpeg')
 
-            # Obtiene la URL de descarga de la imagen en Firebase Cloud Storage
-            image_url = "https://firebasestorage.googleapis.com/v0/b/paintgan-a23b4.appspot.com/o/" + filename + "?alt=media"
+            # Obtiene la URL de descarga de la imagen en Firebase Cloud 
+            project_name = ''
+            image_url = f"https://firebasestorage.googleapis.com/v0/b/{project_name}.appspot.com/o/{filename}?alt=media"
 
             # Guarda la URL en la lista
             image_urls.append(image_url)
